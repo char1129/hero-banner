@@ -13,33 +13,39 @@ body {
 
 .banner {
   position: relative;
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
 }
 
-img {
-  width: 100%;
-}
-
 .img-flex {
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  left: .75em;
-  bottom: 2em;
+  display: block;
   width: 100%;
+  z-index: -1000;
 }
 
-.img-flex h2 {
+.image-content {
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  transform: translateX(.5%);
+  bottom: 0;
+}
+
+.img-content h2 {
   font-size: 4rem;
   font-weight: bold;
   color: #fff;
   margin: 0;
   background-color: rgba(0, 0, 0, .5);
+  max-width: 650px;
+  text-align: left;
 }
 
-.img-flex p {
+.img-content p {
   margin: 0;
+  font-style: italic;
+  max-width: 650px;
 }
 
 .img {
