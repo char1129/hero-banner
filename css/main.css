@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -15,21 +16,23 @@ body {
   position: relative;
   text-align: left;
   font-size: 2rem;
+  max-height: 500px;
+  overflow: hidden;
+  margin: 0;
 }
 
 .img-flex {
-  position: absolute;
   display: block;
   width: 100%;
-  z-index: -1000;
 }
 
-.image-content {
-  flex-direction: column;
-  position: relative;
-  left: 0;
-  transform: translateX(.5%);
+.img-content {
+  position: absolute;
+  transform: translateX(50%);
+  left: 50%;
+  max-width: 50em;
   bottom: 0;
+  margin: 0
 }
 
 .img-content h2 {
@@ -38,9 +41,6 @@ body {
   color: #fff;
   margin: 0;
   background-color: rgba(0, 0, 0, .5);
-  max-width: 650px;
-  text-align: left;
-  padding: 0;
 }
 
 .img-content p {
@@ -48,10 +48,4 @@ body {
   font-style: italic;
   max-width: 650px;
   padding: 0;
-}
-
-.img {
-  max-height: 500px;
-  max-width: 50em;
-  overflow: hidden;
 }
