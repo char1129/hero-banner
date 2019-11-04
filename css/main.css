@@ -27,7 +27,7 @@ body {
 .image-content {
   flex-direction: column;
   position: relative;
-  left: 50%;
+  left: 0;
   transform: translateX(.5%);
   bottom: 0;
 }
@@ -40,12 +40,14 @@ body {
   background-color: rgba(0, 0, 0, .5);
   max-width: 650px;
   text-align: left;
+  padding: 0;
 }
 
 .img-content p {
   margin: 0;
   font-style: italic;
   max-width: 650px;
+  padding: 0;
 }
 
 .img {
