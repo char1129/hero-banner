@@ -10,3 +10,23 @@ html {
 body {
   margin: 0;
 }
+
+.banner {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.banner img {
+  width: 100%
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.banner-content h1 {
+  font-size: 4rem;
+}
